@@ -31,3 +31,30 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.card, .portfolio-item, .section, .pengalaman-item').forEach(el => {
   observer.observe(el);
 });
+
+// Lightbox functionality
+function openLightbox(src) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  lightboxImg.src = src;
+  lightbox.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(event) {
+  // Jika event ada, cek apakah klik di area lightbox (bukan content)
+  if (event && event.target.id !== 'lightbox') {
+    return;
+  }
+  
+  const lightbox = document.getElementById('lightbox');
+  lightbox.classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
+// Close lightbox dengan tombol ESC
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeLightbox();
+  }
+});
