@@ -1,5 +1,5 @@
 // Smooth scroll untuk navigasi
-document.querySelectorAll('.nav-menu a').forEach(anchor => {
+document.querySelectorAll('.nav-Menu a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
     const targetId = this.getAttribute('href').substring(1);
@@ -28,6 +28,6 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Amati elemen untuk animasi
-document.querySelectorAll('.card, .portfolio-item').forEach(el => {
+document.querySelectorAll('.card, .portfolio-item, .section, .pengalaman-item').forEach(el => {
   observer.observe(el);
 });

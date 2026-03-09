@@ -1,0 +1,328 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #05102e, #000205,#05102e);
+  min-height: 100vh;
+  padding: 40px;
+  color: #e2e2e2;
+}
+
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(5, 15, 45, 0.86);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px 40px;
+}
+
+.nav {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-Judul {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.hero{
+    min-height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+    gap: 50px;
+}
+
+.hero h1{
+    font-size: 3rem;
+}
+
+.hero p{
+    font-size: 1.2rem;
+}
+
+.hero span{
+color:#facc15;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+  font-size: 16px;
+  color: #e2e2e2;
+}
+
+.contact-item {
+  text-align: center;
+}
+
+.contact-item strong {
+  color: #6bbf9f;
+}
+
+.card-pendidikan {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #121a33;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.education-logo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto 15px;
+}
+
+.education-text p {
+  margin: 5px 0;
+  color: #e2e2e2;
+}
+
+.nav-Menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-Menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-Menu a:hover {
+  color: #6bbf9f;
+}
+
+/* Container utama */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding-top: 80px; /* Offset for fixed header */
+}
+
+/* Judul */
+
+
+/* Profile Container */
+.profile-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Profile Photo */
+.profile-photo {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 5px solid #facc15;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.08) rotateZ(5deg);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.section{
+  width: 70%;
+  margin: 60px auto;
+  padding:300px 0;
+  font-size: 1.2rem;
+  
+}
+
+.section h2{
+  border-left:4px solid #facc15;
+  padding-left:10px;
+}
+
+.card {
+  background: #faf8f3;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* Card */
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading section */
+.card h2 {
+  margin-bottom: 15px;
+  color: #6bbf9f;
+  border-left: 5px solid #6bbf9f;
+  padding-left: 10px;
+}
+
+/* List */
+.list li {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+/* Skills grid */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  list-style: none;
+}
+
+.skills li { 
+list-style:none;
+padding:0;
+}
+
+.skills li:hover {
+  background: #6bbf9f;
+  color: #faf8f3;
+  transform: scale(1.05);
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  margin-top: 50px;
+}
+
+.portfolio-title {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 30px;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.portfolio-item {
+  background: #faf8f3;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  max-width: 300px;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-item h3 {
+  color:#333;
+  margin-bottom: 10px;
+}
+
+.portfolio-item p {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  background: #6bbf9f;
+  color: #faf8f3;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #15064b;
+}
+
+/* Pengalaman grid styling */
+.pengalaman-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Pengalaman item styling - similar to portfolio */
+.pengalaman-item {
+  background: #faf8f3;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  max-width: 300px;
+}
+
+.pengalaman-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+}
+
+.pengalaman-item h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.pengalaman-item p {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+/* Smooth scroll animations */
+.card, .portfolio-item, .section, .pengalaman-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.card.visible, .portfolio-item.visible, .section.visible, .pengalaman-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
