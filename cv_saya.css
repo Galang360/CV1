@@ -47,14 +47,16 @@ body {
 }
 
 .hero{
-    min-height:60vh;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: 900px;
     margin: 0 auto;
     padding: 0 10px;
     gap: 50px;
+    margin-top: 80px;
+    scroll-margin-top: 150px;
 }
 
 .hero h1{
@@ -88,19 +90,21 @@ color:#facc15;
 
 .card-pendidikan {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0 auto 35px;
   background: #121a33;
-  padding: 20px;
+  padding: 30px 25px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   text-align: center;
+  width: 100%;
 }
 
 .experience-row {
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .experience-row .card-pendidikan {
@@ -115,8 +119,9 @@ color:#facc15;
 }
 
 .education-text p {
-  margin: 5px 0;
+  margin: 12px 0;
   color: #e2e2e2;
+  line-height: 1.6;
 }
 
 .nav-Menu {
@@ -170,16 +175,18 @@ color:#facc15;
 
 .section{
   width: 70%;
-  margin: 60px auto;
-  padding:50px 0;
+  margin: 100px auto;
+  padding: 60px 40px;
   font-size: 1.2rem;
-  scroll-margin-top: 100px;
-  
+  scroll-margin-top: 150px;
+  line-height: 1.8;
 }
 
 .section h2{
-  border-left:4px solid #facc15;
-  padding-left:10px;
+  border-left: 4px solid #facc15;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
 }
 
 .card {
@@ -211,17 +218,19 @@ color:#facc15;
 /* List */
 .list li {
   margin-left: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
+  line-height: 1.7;
 }
 
 /* Skills grid */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+  gap: 25px;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   list-style: none;
+  padding: 20px 0;
 }
 
 .skill-card {
