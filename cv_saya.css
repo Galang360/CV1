@@ -68,7 +68,7 @@ body {
 }
 
 .hero span{
-color:#facc15;
+color:#15fa84;
 }
 
 .contact-info {
@@ -162,7 +162,7 @@ color:#facc15;
   width: 230px;
   height: 230px;
   border-radius: 50%;
-  border: 5px solid #facc15;
+  border: 5px solid #15fa84;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   object-fit: cover;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -183,7 +183,7 @@ color:#facc15;
 }
 
 .section h2{
-  border-left: 4px solid #facc15;
+  border-left: 4px solid #15fa84;
   padding-left: 10px;
   margin-bottom: 30px;
   font-size: 1.8rem;
@@ -234,7 +234,7 @@ color:#facc15;
 }
 
 .skill-card {
-  background: #e8f0f7;
+  background: #05102e;
   padding: 25px;
   border-radius: 12px;
   text-align: center;
@@ -255,7 +255,7 @@ color:#facc15;
 }
 
 .skill-card p {
-  color: #05102e;
+  color: #e1e1e1;
   font-weight: 500;
   margin: 0;
 }
@@ -282,7 +282,7 @@ color:#facc15;
 }
 
 .portfolio-section h2 {
-  border-left: 4px solid #facc15;
+  border-left: 4px solid #15fa84;
   padding-left: 10px;
   margin-bottom: 30px;
 }
@@ -311,7 +311,7 @@ color:#facc15;
 }
 
 .portfolio-item h3 {
-  color: #facc15;
+  color: #15fa84;
   margin-bottom: 15px;
   font-size: 1.5rem;
 }
@@ -409,7 +409,7 @@ color:#facc15;
 }
 
 .lightbox-close:hover {
-  color: #facc15;
+  color: #15fa84;
 }
 
 @media (max-width: 768px) {
